@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Chhavi Varshney</h1>
+    <h2>Name<%=stu.name%></h2>
+    <h2>Rollno<%=stu.rollno%></h2>
+    <h2>Email<%=stu.email%></h2>
+    <h2>Age<%=stu.age%></h2>
+    <h3>Hobbies<%stu.hobbies.forEach(hob=>{%>
+        <%=hob%>
+    <%})%></h3>
+    <h3>hobbies<% for(let i = 0; i < stu.hobbies.length; i++) { %>
+        <%= stu.hobbies[i] %>
+    <% } %></h3>
+</body>
+</html>
